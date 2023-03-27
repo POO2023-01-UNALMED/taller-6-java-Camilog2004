@@ -25,7 +25,7 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 		Vehiculo.CantidadVehiculos++;
 		
-		//Código para llenar las listas fabricante y pais
+		//Codigo para llenar las listas fabricante y pais
 		
 		if(Pais.listaPaises.contains(fabricante.getPais())) {
 			//Indice del Pais ingresado (Ya existente)
@@ -36,7 +36,7 @@ public class Vehiculo {
 			Pais.cantidadPorPais.set(indice,valorMomentaneo+1);
 		}else {
 			Pais.listaPaises.add(fabricante.getPais());
-			//Add añade al final de la lista
+			//Add pone al final de la lista
 			Pais.cantidadPorPais.add(1);
 		}
 		

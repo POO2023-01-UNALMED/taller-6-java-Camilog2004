@@ -12,11 +12,13 @@ public class Fabricante {
 	public static Fabricante fabricaMayorVentas() {
 		int valorMax=-1;
 		Fabricante fabricanteMasVentas=null;
+		int indice=-1;
 		
 		for(Integer i:Fabricante.cantidadPorFabricante) {
 			if(i>valorMax) {
 				valorMax=i;
-				fabricanteMasVentas=Fabricante.listaFabricantes.get(valorMax);		
+				indice=Fabricante.cantidadPorFabricante.indexOf(valorMax);
+				fabricanteMasVentas=Fabricante.listaFabricantes.get(indice);
 			}
 		}
 		

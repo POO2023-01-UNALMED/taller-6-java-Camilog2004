@@ -18,11 +18,13 @@ public class Pais {
 		
 		int valorMax=-1;
 		Pais paisMasVendedor=null;
+		int indice=-1;
 		
 		for (Integer i:Pais.cantidadPorPais) {
 			if(i>valorMax) {
 				valorMax=i;
-				paisMasVendedor=Pais.listaPaises.get(valorMax);
+				indice=Pais.cantidadPorPais.indexOf(valorMax);
+				paisMasVendedor=Pais.listaPaises.get(indice);
 				
 			}
 		}
