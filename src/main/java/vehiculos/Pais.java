@@ -7,6 +7,12 @@ public class Pais {
 	private String nombre;
 	public static ArrayList<Pais> listaPaises=new ArrayList<Pais>();
 	public static ArrayList<Integer> cantidadPorPais=new ArrayList<Integer>();
+	
+	
+	public Pais(String nombre) {
+		this.nombre=nombre;
+		
+	}
 
 	public static Pais paisMasVendedor() {
 		
